@@ -1,0 +1,16 @@
+.title {
+	font-family: 'IBM Plex mono', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+	color: darkblue;
+	text-transform: uppercase;
+}
+
+.title:hover {
+	color: turquoise;
+}
+
+.title_style-light {
+	font-size: 12px;
+	color: aqua;
+}

@@ -1,0 +1,39 @@
+{
+	"name": "gulp-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "stylelint ./src/**/*.css",
+		"lintfix": "stylelint ./src/**/*.css --fix",
+		"fixAll": "npm run lintfix && prettier --write './src/**/*.{html,css,js}'",
+		"build": "gulp build",
+		"fixAndBuild": "npm run fixAll && npm run build",
+		"dev": "gulp"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.20",
+		"browser-sync": "^3.0.3",
+		"cssnano": "^7.0.6",
+		"del": "^6.0.0",
+		"gulp": "^5.0.0",
+		"gulp-autoprefixer": "^9.0.0",
+		"gulp-concat-css": "^3.1.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^10.0.0",
+		"html-minifier": "^4.0.0",
+		"postcss": "^8.4.47",
+		"postcss-combine-media-query": "^1.0.1",
+		"prettier": "^3.3.3",
+		"stylelint": "^16.10.0"
+	},
+	"browserslist": [
+		"last 2 versions",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
+}
